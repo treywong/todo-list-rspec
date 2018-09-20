@@ -37,7 +37,6 @@ describe Task do
   
   describe "#complete!" do
     context "changes the task from incomplete to completed" do
-      Then {task.complete? == false}
       When {task.complete!}
       Then {task.complete? == true}
     end
